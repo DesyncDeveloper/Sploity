@@ -112,3 +112,5 @@ local Main = CreateInstance()
 
 Main.Parent = game.CoreGui
 Main.Name = "SecondsItemsPer"
+
+return Main
