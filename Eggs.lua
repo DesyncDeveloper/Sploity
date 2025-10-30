@@ -1,4 +1,5 @@
 local EggsData = {
+    HalloweenCFrame = Vector3.new(-4922.46289, 25.5243816, -567.863281),
     Perm = {
         "Common Egg",
         "Spotted Egg",
