@@ -1,5 +1,6 @@
 local EggsData = {
     HalloweenCFrame = Vector3.new(-4922.46289, 25.5243816, -567.863281),
+    OverworldEggAreaCFrame = Vector3.new(-69.27651977539062, 9.55966567993164, -27.520709991455078)
     Perm = {
         "Common Egg",
         "Spotted Egg",
