@@ -23,6 +23,14 @@ local EggsData = {
         "Secret Egg",
         "Atlantis Egg",
         "Classic Egg"
+    },
+    Event = {
+        Halloween = {
+            "Pumpkin Egg",
+            "Costume Egg",
+            "Sinister Egg",
+            "Mutant Egg"
+        }
     }
 }
 
