@@ -1,5 +1,4 @@
 local EggsData = {
-    ActiveEvent = "Halloween",
     HalloweenCFrame = Vector3.new(-4922.46289, 25.5243816, -567.863281),
     Perm = {
         "Common Egg",
@@ -32,7 +31,20 @@ local EggsData = {
             "Sinister Egg",
             "Mutant Egg"
         }
-    }
+    },
+    ActiveEvent = "Halloween",
+    AreaToTeleport = {}
 }
+
+for _, egg in ipairs(EggsData.Perm) do
+    EggsData.AreaToTeleport[egg] = "Workspace.Worlds.The Overworld.FastTravel.Spawn"
+end
+
+local activeEvent = EggsData.ActiveEvent
+if activeEvent and EggsData.Event[activeEvent] then
+    for _, egg in ipairs(EggsData.Event[activeEvent]) do
+        EggsData.AreaToTeleport[egg] = "Workspace.HalloweenEvent.Spawn"
+    end
+end
 
 return EggsData
